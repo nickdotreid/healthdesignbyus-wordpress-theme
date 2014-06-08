@@ -8,7 +8,31 @@
    Base
    ========================================================================== */
 
-body { }
+body {
+   font-family: "Century Gothic", Helvetica, sans-serif;
+   font-weight: lighter;
+   color: #666666;
+   font-style: normal;
+   text-decoration:none;
+   padding-top:70px; // Height of navbar
+}
+
+p, h1, h2, h3, h4, a  {
+
+}
+
+h1, h2, h3, h4 {
+   text-align: center;
+   text-transform: uppercase;
+}
+
+p { font-size: 12pt; }
+
+h1 { font-size: 36pt}
+
+h2 { font-size: 28pt; }
+
+h4 { font-size: 16pt; }
 
 
 
@@ -16,7 +40,73 @@ body { }
    Header
    ========================================================================== */
 
-.banner { }
+.banner {
+   background-color: #FFF;
+   border-bottom:4px solid #666666;
+   padding-top:4px;
+   padding-bottom:8px;
+}
+
+.navbar-brand{
+   display:block;
+   overflow:hidden;
+   text-indent:-3000px;
+    background-image: url("../img/logo_HealthDesignByUs.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 48px;
+}
+
+.navbar-icons{
+   li{
+      display:block;
+      margin-left:4px;
+   }
+   a{
+   display:block;
+   height:48px;
+   width:48px;
+   padding:0px;
+   margin:0px;
+   overflow:hidden;
+   text-indent:-3000px;
+   background-image:none;
+   background-color: #666;
+   background-position: center center;
+   background-repeat: no-repeat;
+   }
+}
+
+.navbar-icons .navbar-nav > li > a:hover{
+   background-color:#666;
+}
+
+.navbar-icons{
+   .email a{
+      background-image: url('../img/logo_email.png');
+      background-color: #00BCB2;
+      &:hover,&.hover{
+         background-color: #666;
+      }
+   }
+   .twitter a{
+      background-image: url('../img/logo_twitter.png');
+      background-color: #5FAAD8;
+      &:hover,&.hover{
+         background-color: #666;
+      }
+   }
+   .facebook a{
+      background-image: url('../img/logo_facebook.png');
+      background-color: #44619D;
+      &:hover,&.hover{
+         background-color: #666;
+      }
+   }
+}
+
+
 
 
 
