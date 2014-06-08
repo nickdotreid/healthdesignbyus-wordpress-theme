@@ -1,4 +1,4 @@
-<article <?php post_class(); ?>>
+<article <?php post_class("preview"); ?>>
 	<div class="container">
 		<h2><a href="<?php the_permalink(); ?>"><? the_title(); ?></a></h2>
 		<div class="entry-summary">
