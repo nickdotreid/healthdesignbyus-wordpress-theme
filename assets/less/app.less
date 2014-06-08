@@ -47,25 +47,54 @@ h4 { font-size: 16pt; }
 .banner {
    background-color: #FFF;
    border-bottom:4px solid #666666;
-   padding-top:4px;
-   padding-bottom:8px;
+   padding-top:0px;
+   padding-bottom:0px;
 }
 
 .navbar-brand{
    display:block;
    overflow:hidden;
    text-indent:-3000px;
-    background-image: url("../img/logo_HealthDesignByUs.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 48px;
-    width: 48px;
+   background-color: transparent;
+   background-image: url("../img/sprite-sheet.png");
+   background-position: 0px 0px;
+   background-repeat: no-repeat;
+   height: 48px;
+   width: 48px;
+}
+
+.navbar-toggle{
+   margin:0px;
+   margin-left:4px;
+   border-width:0px 1px;
+   border-radius: 0px;
+   padding:36px 10px 16px;
+}
+
+.navbar-nav{
+   margin:0px;
+}
+
+.navbar-nav li{
+   padding-top:12px;
+   padding-bottom:4px;
+}
+
+.navbar-nav li.active{
+   background-color:#E7E7E7;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+   background-color:transparent;
 }
 
 .navbar-icons{
    li{
       display:block;
+      float:left;
+      background-color:#666;
       margin-left:4px;
+      padding-top:14px; // match height of navbar icons
    }
    a{
    display:block;
@@ -75,9 +104,9 @@ h4 { font-size: 16pt; }
    margin:0px;
    overflow:hidden;
    text-indent:-3000px;
-   background-image:none;
-   background-color: #666;
-   background-position: center center;
+   background-image: url('../img/sprite-sheet.png');
+   background-color: transparent;
+   background-position: 0px 0px;
    background-repeat: no-repeat;
    }
 }
@@ -87,25 +116,33 @@ h4 { font-size: 16pt; }
 }
 
 .navbar-icons{
-   .email a{
-      background-image: url('../img/logo_email.png');
+   .email{
+      display:block;
       background-color: #00BCB2;
-      &:hover,&.hover{
-         background-color: #666;
+      a{
+         background-position: -152px 6px;         
+         &:hover,&.hover{
+            background-position: -152px -41px;
+         }
       }
    }
-   .twitter a{
-      background-image: url('../img/logo_twitter.png');
+   .twitter{
       background-color: #5FAAD8;
-      &:hover,&.hover{
-         background-color: #666;
+      a{
+         background-position: -56px 6px;
+         &:hover,&.hover{
+            background-position: -56px -41px;
+         }
       }
    }
-   .facebook a{
-      background-image: url('../img/logo_facebook.png');
+   .facebook{
       background-color: #44619D;
-      &:hover,&.hover{
-         background-color: #666;
+      a{
+         background-position: -104px 6px;
+         
+      }
+      a:hover,a.hover{
+         background-position: -104px -41px;
       }
    }
 }
