@@ -3,8 +3,10 @@ $color = get_field( "color" );
 ?>
 <article <?php post_class("preview"); ?><? if($color):?> style="background-color:<?=$color;?>;"<?endif;?>>
 	<div class="container">
-		<h2><a href="<?php the_permalink(); ?>"><? the_title(); ?></a></h2>
-		<div class="entry-summary">
+    <div class="header">
+		  <h2><a href="<?php the_permalink(); ?>"><? the_title(); ?></a></h2>
+		</div>
+    <div class="entry-summary">
     		<?php the_excerpt(); ?>
   		</div>
   	<? if ( has_post_thumbnail() ): ?>
