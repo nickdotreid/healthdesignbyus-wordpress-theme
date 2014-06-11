@@ -17,6 +17,9 @@ module.exports = function(grunt) {
         files: {
           'assets/css/main.min.css': [
             'assets/less/app.less'
+          ],
+          'assets/css/ie.min.css': [
+            'assets/less/ie.less'
           ]
         },
         options: {
